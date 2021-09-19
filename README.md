@@ -10,6 +10,7 @@ Features:
 - shortcuts for fast use:
     - 'f' toggle filter panel
     - 'esc' toggle expression filtering
+    - inside expression editor 'ctrl-up' & 'ctrl-down' sets previous or next expression in current session history
     - 'a' move time-frame back
     - 'x' move time-frame forward    
     - 'e' filter by level error
@@ -27,3 +28,4 @@ Create new connection
 Open from existing config
 
 ![](https://github.com/LucaGabi/VSE-Serilog-events-viewer/blob/main/l.o.gif)
+
