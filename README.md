@@ -7,6 +7,16 @@ Features:
 - filter by time frame, level, content
 - filter by expresion (similar to where clause in SQL)
 - persist config file for future inspection
+- shortcuts for fast use:
+    - 'f' toggle filter panel
+    - 'esc' toggle expression filtering
+    - 'a' move time-frame back
+    - 'x' move time-frame forward    
+    - 'e' filter by level error
+    - 'w' filter by level warning
+    - 'd' filter by level debug
+    - 'i' filter by level info
+    - 'q' filter by level info
 
 TIP: ssh would be a good use to provide the connection in a secure manner
 
