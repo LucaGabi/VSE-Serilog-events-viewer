@@ -19,6 +19,8 @@ This vscode extention allows inspection of logs created with serilog sinks here:
     - 'i' filter by level info
     - 'q' filter by level info
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=5MS8L5EVWBEUC)
+
 **Create new connection**
 
 ![](https://github.com/LucaGabi/VSE-Serilog-events-viewer/blob/main/l.c.gif)
