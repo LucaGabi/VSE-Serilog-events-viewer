@@ -27,7 +27,9 @@ This vscode extention allows inspection of logs created with serilog sinks here:
 
 **Open from existing config**
 
+
 ![](https://github.com/LucaGabi/VSE-Serilog-events-viewer/blob/main/l.o.gif)
+
 
 **Serilog setup**
 ```c#
