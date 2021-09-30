@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC0A256C-CC1F-4ECE-AF09-707248D10DC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{2EA56595-519F-4DD5-9E94-CCC43E3DF624}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		Build.Docker.ps1 = Build.Docker.ps1
+		Build.ps1 = Build.ps1
+		docker-publish.ps1 = docker-publish.ps1
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+		Setup.ps1 = Setup.ps1
+		setup.sh = setup.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3587B633-0C03-4235-8903-6226900328F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{438A0DA5-F3CF-4FCE-B43A-B6DA2981D4AE}"
+	ProjectSection(SolutionItems) = preProject
+		asset\SeqCli.ico = asset\SeqCli.ico
+		asset\SeqCli.png = asset\SeqCli.png
+		asset\SeqCliLicense.rtf = asset\SeqCliLicense.rtf
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqCli", "src\SeqCli\SeqCli.csproj", "{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqCli.Tests", "test\SeqCli.Tests\SeqCli.Tests.csproj", "{DBC69360-519B-4A9B-829B-2AE1B5412521}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqCli.EndToEnd", "test\SeqCli.EndToEnd\SeqCli.EndToEnd.csproj", "{B86DEF3C-C461-4126-AD49-986EBB19B487}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dockerfiles", "dockerfiles", "{0779824B-502D-450B-BB43-036949C911C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seqcli", "seqcli", "{7F7CAC3A-1046-4D2B-BF9F-F14525918295}"
+	ProjectSection(SolutionItems) = preProject
+		dockerfiles\seqcli\.gitignore = dockerfiles\seqcli\.gitignore
+		dockerfiles\seqcli\Dockerfile = dockerfiles\seqcli\Dockerfile
+		dockerfiles\seqcli\run.sh = dockerfiles\seqcli\run.sh
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roastery", "src\Roastery\Roastery.csproj", "{D2CB1112-7CD3-4A1B-A114-25130C96295E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.MongoDB", "..\..\..\..\Work\Test\mongo-serilog\src\Serilog.Sinks.MongoDB\Serilog.Sinks.MongoDB.csproj", "{2605ED8C-C12A-42FB-9825-32FFEA7B4301}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Debug|x64.ActiveCfg = Debug|x64
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Debug|x64.Build.0 = Debug|x64
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Release|Any CPU.ActiveCfg = Release|x64
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Release|x64.ActiveCfg = Release|x64
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687}.Release|x64.Build.0 = Release|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Debug|x64.ActiveCfg = Debug|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Debug|x64.Build.0 = Debug|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Release|Any CPU.ActiveCfg = Release|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Release|x64.ActiveCfg = Release|x64
+		{DBC69360-519B-4A9B-829B-2AE1B5412521}.Release|x64.Build.0 = Release|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Debug|x64.ActiveCfg = Debug|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Debug|x64.Build.0 = Debug|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Release|Any CPU.ActiveCfg = Release|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Release|x64.ActiveCfg = Release|x64
+		{B86DEF3C-C461-4126-AD49-986EBB19B487}.Release|x64.Build.0 = Release|x64
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Debug|x64.Build.0 = Debug|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|x64.ActiveCfg = Release|Any CPU
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|x64.Build.0 = Release|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|x64.Build.0 = Debug|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|x64.ActiveCfg = Release|Any CPU
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBDBEED2-A1BC-4269-B6B0-EA908CE4D687} = {FC0A256C-CC1F-4ECE-AF09-707248D10DC1}
+		{DBC69360-519B-4A9B-829B-2AE1B5412521} = {3587B633-0C03-4235-8903-6226900328F1}
+		{B86DEF3C-C461-4126-AD49-986EBB19B487} = {3587B633-0C03-4235-8903-6226900328F1}
+		{7F7CAC3A-1046-4D2B-BF9F-F14525918295} = {0779824B-502D-450B-BB43-036949C911C4}
+		{D2CB1112-7CD3-4A1B-A114-25130C96295E} = {FC0A256C-CC1F-4ECE-AF09-707248D10DC1}
+		{2605ED8C-C12A-42FB-9825-32FFEA7B4301} = {FC0A256C-CC1F-4ECE-AF09-707248D10DC1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D299713-28D4-4078-9DA7-9033679CD200}
+	EndGlobalSection
+EndGlobal

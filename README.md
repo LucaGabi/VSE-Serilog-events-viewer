@@ -77,3 +77,9 @@ public class JSSTimeStamp : ILogEventEnricher
                 })
                 .CreateLogger();
 ```
+# Generate fake logs
+Inside ```fake-logs-producer\seqcli-dev\src\Roastery\Program.cs``` change these lines (24,25):
+```c#
+private const string ConnectionString = "...";
+private const string DB = "...";
+```

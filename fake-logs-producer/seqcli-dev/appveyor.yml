@@ -1,0 +1,55 @@
+version: 2021.3.{build}
+skip_tags: true
+image:
+- Visual Studio 2019
+- Ubuntu1804
+environment:
+  DOCKER_TOKEN:
+   secure: QKr2YEuliXdFKe3jN7w97w==
+  DOCKER_USER:
+    'datalustbuild'
+test: off
+artifacts:
+- path: artifacts/seqcli-*.zip
+- path: artifacts/seqcli-*.tar.gz
+- path: artifacts/seqcli.*.nupkg
+
+for:
+-
+  matrix:
+    only:
+      - image: Visual Studio 2019
+
+  install:
+  - ps: ./Setup.ps1
+
+  build_script:
+    - ps: ./Build.ps1 -shortver "$($env:APPVEYOR_BUILD_VERSION)"
+      
+  deploy:
+  
+  - provider: NuGet
+    api_key:
+      secure: EVhhkxsbCh3YQw4IO7/d2paIjtjWiZGqs2pZl1l2Gkdz4DluOomXHA+wkPWHscj3
+    skip_symbols: true
+    artifact: /seqcli\..*\.nupkg/
+    on:
+      branch: main
+      
+  - provider: GitHub
+    auth_token:
+      secure: Bo3ypKpKFxinjR9ShkNekNvkob2iklHJU+UlYyfHtcFFIAa58SV2TkEd0xWxz633
+    artifact: /seqcli-.*\.(nupkg|zip|tar\.gz)/
+    tag: v$(appveyor_build_version)
+    on:
+      branch: main
+-
+  matrix:
+    only:
+      - image: Ubuntu1804
+
+  install:
+  - ./setup.sh
+
+  build_script:
+  - ps: $env:PATH = "$env:HOME/.dotnetcli:$env:PATH"; ./Build.Docker.ps1 -shortver "$($env:APPVEYOR_BUILD_VERSION)"
