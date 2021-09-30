@@ -21,8 +21,8 @@ namespace Roastery
     // Named this way to make stack traces a little more believable :-)
     public static class Program
     {
-        private const string ConnectionString = "";
-        private const string DB = "";
+        private const string ConnectionString = "mongodb://admin:admin%40mango!!@192.168.100.2:27017/";
+        private const string DB = "mongodbVSCodePlaygroundDB";
 
         //private const string Path = @"c:\temp\jsonl\data.json";
 
