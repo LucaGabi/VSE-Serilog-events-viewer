@@ -45,8 +45,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seqcli", "seqcli", "{7F7CAC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roastery", "src\Roastery\Roastery.csproj", "{D2CB1112-7CD3-4A1B-A114-25130C96295E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.MongoDB", "..\..\..\..\Work\Test\mongo-serilog\src\Serilog.Sinks.MongoDB\Serilog.Sinks.MongoDB.csproj", "{2605ED8C-C12A-42FB-9825-32FFEA7B4301}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,14 +79,6 @@ Global
 		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|x64.ActiveCfg = Release|Any CPU
 		{D2CB1112-7CD3-4A1B-A114-25130C96295E}.Release|x64.Build.0 = Release|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Debug|x64.Build.0 = Debug|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|x64.ActiveCfg = Release|Any CPU
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,7 +89,6 @@ Global
 		{B86DEF3C-C461-4126-AD49-986EBB19B487} = {3587B633-0C03-4235-8903-6226900328F1}
 		{7F7CAC3A-1046-4D2B-BF9F-F14525918295} = {0779824B-502D-450B-BB43-036949C911C4}
 		{D2CB1112-7CD3-4A1B-A114-25130C96295E} = {FC0A256C-CC1F-4ECE-AF09-707248D10DC1}
-		{2605ED8C-C12A-42FB-9825-32FFEA7B4301} = {FC0A256C-CC1F-4ECE-AF09-707248D10DC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D299713-28D4-4078-9DA7-9033679CD200}
