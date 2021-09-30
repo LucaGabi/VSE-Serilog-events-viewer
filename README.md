@@ -3,6 +3,16 @@ Visual Studio Code Extention to inspect serilog events
 
 This vscode extention allows inspection of logs created with serilog sinks here: https://github.com/serilog/serilog-sinks-mongodb
 
+```
+dotnet add package Serilog.Sinks.MongoDB --version 5.1.1
+```
+```
+Install-Package Serilog.Sinks.MongoDB -Version 5.1.1
+```
+```
+<PackageReference Include="Serilog.Sinks.MongoDB" Version="5.1.1" />
+```
+
 **Features:**
 - filter by time frame, level, content
 - filter by expresion (similar to where clause in SQL)
